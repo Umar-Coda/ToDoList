@@ -1,0 +1,199 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* font weights */
+    --thin: 100;
+    --extra-light: 200;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+
+    /* Font sizes */
+    --link: 16px;
+    --paragraph: 18px;
+    --heading: 24px;
+    --sub-heading: 22px;
+
+    /* Color Palette -- Fiery Ocean */
+    --primary-color: #c1121f;
+    --secondary-color: #fdf0d5;
+    --tertiary-color: #003049;
+    --grey-color: #669bbc;
+    --hot-color: #780000;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    background-color: var(--grey-color);
+    color: white;
+}
+
+h1 {
+    font-weight: var(--bold);
+    font-size: var(--heading);
+}
+
+ul {
+    list-style: none;
+}
+
+th {
+    font-weight: var(--semi-bold);
+    font-size: var(--sub-heading);
+}
+
+td {
+    font-weight: var(--regular);
+    font-size: var(--paragraph);
+}
+
+/* Link Styles */
+a {
+    font-weight: var(--regular);
+    font-size: var(--link);
+    text-decoration: none;
+}
+
+a:link {
+    color: var(--secondary-color)
+}
+
+a:visited {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--tertiary-color);
+    box-shadow: 1px 1px 1px 2px var(--secondary-color);
+}
+
+.header-title {
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-link {
+    margin: 10px;
+    padding-top: 10px;
+}
+
+/* Search Section */
+.search-section {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 50%;
+    border-radius: 10px;
+    border: 2px solid var(--tertiary-color);
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: var(--semi-bold);
+    outline: none;
+}
+
+.search-bar::placeholder {
+    color: var(--tertiary-color);
+}
+
+.search-bar:focus {
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.search-bar:focus::placeholder {
+    color: var(--secondary-color);
+}
+
+/* Button Styling */
+.btn {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: var(--link);
+    font-weight: var(--medium);
+    cursor: pointer;
+}
+
+.btn-primary {
+    border: 2px solid var(--tertiary-color);
+    color: var(--tertiary-color);
+    background-color: whitesmoke;
+}
+
+.btn-primary:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color)
+}
+
+/* Table Styling */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.task-table {
+    border: 1px solid var(--secondary-color);
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.data-head {
+    background-color: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+.data-head:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.data-row {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+.data-row:hover {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+td {
+    text-align: center;
+}
