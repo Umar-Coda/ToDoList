@@ -1,0 +1,24 @@
+:root {
+    /* font weights */
+    --thin: 100;
+    --extra-light: 200;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+
+    /* Font sizes */
+    --small: 14px;
+    --link: 16px;
+    --paragraph: 18px;
+    --heading: 24px;
+    --sub-heading: 22px;
+
+    /* Color Palette -- Fiery Ocean */
+    --primary-color: #c1121f;
+    --secondary-color: #fdf0d5;
+    --tertiary-color: #003049;
+    --grey-color: #669bbc;
+    --hot-color: #780000;
+}

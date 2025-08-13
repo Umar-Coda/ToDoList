@@ -1,0 +1,85 @@
+@import url(./variables.css);
+
+.modal-container {
+    display: none; /* Hidden by default */
+    background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+    padding: 100px;
+}
+
+.modal-content {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.model-title {
+    font-size: var(--semi-bold);
+}
+
+.add-task-form {
+    display: grid;
+    margin-bottom: 20px;
+    gap: 5px 10px;
+}
+
+#btn-modal {
+    margin-top: 10px;
+    grid-row: 5;
+    grid-column: 1 / span 2;
+}
+
+#title-label {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#task-title {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+
+#category-label {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#status-label {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#task-category {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+#task-status {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+label {
+    font-size: var(--small);
+    font-weight: var(--medium);
+}
+
+#task-category {
+    width: auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#task-status {
+    width: auto;
+    border-radius: 10px;
+    padding: 5px;
+}

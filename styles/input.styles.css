@@ -1,0 +1,22 @@
+input[type=text] {
+    border-radius: 10px;
+    border: 2px solid var(--tertiary-color);
+    background-color: whitesmoke;
+    padding: 10px;
+    font-size: var(--semi-bold);
+    outline: none;
+}
+
+input[type=text]::placeholder {
+    color: var(--tertiary-color);
+}
+
+input[type=text]:focus {
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+input[type=text]:focus::placeholder {
+    color: var(--secondary-color);
+}
